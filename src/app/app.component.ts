@@ -12,13 +12,13 @@ import { HeroService } from './hero.service';
           <li *ngFor="let hero of heroes" 
             (click)="onSelect(hero)"
             [class.selected]="hero === selectedHero"
-            >
-            <span class="badge">{{hero.id}}</span> {{hero.name}}
+          >
+          <span class="badge">{{hero.id}}</span> {{hero.name}}
 		  </li>
 		</ul>
         <my-hero-detail [hero]="selectedHero"></my-hero-detail>
     `,
-    providers: [HeroService]
+    //providers: [HeroService]
 })
 
 export class AppComponent { 
